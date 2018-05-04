@@ -3,7 +3,7 @@ This is a [Giter8][g8] template for a scala-based Kakfa streams
 
 You can create a new project based on this template with the following command (no need to clone this repo): 
 ```
-sbt new sv3nd/kafka-streams-scala.g8
+sbt new sv3ndk/kafka-streams-scala.g8
 ```
 
 The created project should contain a basic Kafka Streams wordcount example based on [Lightbend's wrapper around Kafka Streams API](https://developer.lightbend.com/blog/2018-01-05-kafka-streams-scala-goodies-part-1/)
