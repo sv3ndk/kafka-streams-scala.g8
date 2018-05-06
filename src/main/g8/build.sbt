@@ -1,21 +1,24 @@
 import Dependencies._
 
+val v2 = "maven(org.scalatest, scalatest_2.12, stable)"
+val v3 = "maven(org.scalatest, scalatest_2.12)"
+
 lazy val root = (project in file(".")).
   settings(
 
     inThisBuild(List(
       organization := "$organization$",
-      scalaVersion := "2.12.4",
+      scalaVersion := "2.12.6",
       version      := "0.1.0-SNAPSHOT"
     )),
 
     name := "$name$",
 
     libraryDependencies ++= Seq(
-        "org.scalatest" %% "scalatest" % "3.0.1" % Test,
-        "org.scalacheck" %% "scalacheck" % "1.13.4" % Test,
-        "com.lightbend" %% "kafka-streams-scala" % "0.1.0",
-        "org.slf4j" % "slf4j-simple" % "1.7.12"
+        "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+        "org.scalacheck" %% "scalacheck" % "1.14.0" % Test,
+        "com.lightbend" %% "kafka-streams-scala" % "0.2.1",
+        "org.slf4j" % "slf4j-simple" % "1.7.25"
     ),
 
     resolvers ++= Seq(
