@@ -1,8 +1,5 @@
 import Dependencies._
 
-val v2 = "maven(org.scalatest, scalatest_2.12, stable)"
-val v3 = "maven(org.scalatest, scalatest_2.12)"
-
 lazy val root = (project in file(".")).
   settings(
 
